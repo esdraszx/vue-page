@@ -57,6 +57,7 @@
     <div id="projects">
       <!-- Showcase projects I have worked on -->
       <h3><b>PROJECTS</b></h3>
+      <p>Most projects are restricted to BYU students or people with a BYU account.</p>
       <br/>
       <div class='largeSection'>
         <div class='projectCard'>
@@ -64,17 +65,19 @@
           <div class='cardContent'>
             <h4>BYU Homecoming</h4>
             <h5>JS / Brightspot(CMS)</h5>
+            <p>Website to showcase information about university events, and find current and past university awardees.</p>
             <br/><br/>
             <a class='projectButton' href='https://homecoming.byu.edu/' target='_black'>View</a>
           </div>
         </div>
         <div class='projectCard'>
-          <img src='../assets/projects/relations.jpg' style='width: 150%; height: 100%; margin-left: -25%; position: relative; z-index: 1;'>
+          <img src='../assets/projects/ag.jpeg' style='width: 150%; height: 100%; margin-left: -25%; position: relative; z-index: 1;'>
           <div class='cardContent'>
-            <h4>University Relations</h4>
+            <h4>Aspengrove Resort</h4>
             <h5>C.Fusion/Drupal/JS/SQL</h5>
-            <br/><br/>
-            <a class='projectButton' href='http://ur.byu.edu' target='_black'>View</a>
+            <p>Web application to showcase information about the resort and allow users to make reservations, payments, and review their orders.</p>
+            <br/>
+            <a class='projectButton' href='http://aspengrove.byu.edu' target='_black'>View</a>
           </div>
         </div>
         <div class='projectCard'>
@@ -82,8 +85,9 @@
           <div class='cardContent'>
             <h4>YVideo</h4>
             <h5>React / Redux</h5>
-            <br/><br/>
-            <a class='projectButton' href='' target='_black'>View</a>
+            <p>Video platform for professors to edit videos and create video collections. Students enrolled in a class can view the collections as part of their course work</p>
+            <br/>
+            <a class='projectButton' href='https://github.com/BYU-ODH/yvideo-client' target='_black'>View</a>
           </div>
         </div>
       </div>
@@ -280,6 +284,7 @@ export default {};
 @media only screen and (max-width: 1000px) {
   #content {
     top: -80px;
+    height: 2000px;
   }
 
   #about, #skills, #education {
