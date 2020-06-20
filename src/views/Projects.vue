@@ -1,5 +1,6 @@
 <template>
     <div>
+        <iframe src="/assets/documents/res2020.pdf" width="700px" height="800px"></iframe>
         <Header></Header>
         <div class="row project-tile">
             <div class="col-sm-6">

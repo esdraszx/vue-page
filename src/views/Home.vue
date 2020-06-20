@@ -23,7 +23,7 @@
               </a>
             </li>
           </ul>
-          <a href='about' style="bottom: -16px;" class='moreLink'><span>Learn More</span><img src='../assets/navigationIcons/arrowRight.svg' width='20px' height='20px'></a>
+          <!-- <a href='about' style="bottom: -16px;" class='moreLink'><span>Learn More</span><img src='../assets/navigationIcons/arrowRight.svg' width='20px' height='20px'></a> -->
         </div>
       </div>
       <div class='smallSection'>
@@ -49,7 +49,7 @@
             <span>Git</span> &nbsp;
             <span>Linux</span>
           </p>
-          <a href='about' target='_blank' class='moreLink'><span>View Resume</span><img src='../assets/navigationIcons/arrowRight.svg' width='20px' height='20px'></a>
+          <a href='../assets/documents/res2020.pdf' target='_blank' class='moreLink'><span>View Resume</span><img src='../assets/navigationIcons/arrowRight.svg' width='20px' height='20px'></a>
         </div>
       </div>
     </div>
