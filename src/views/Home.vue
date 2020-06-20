@@ -284,7 +284,7 @@ export default {};
 @media only screen and (max-width: 1000px) {
   #content {
     top: -80px;
-    height: 2000px;
+    height: 2010px;
   }
 
   #about, #skills, #education {
@@ -332,7 +332,7 @@ export default {};
   }
 
   .projectCardSummary {
-    visibility: hidden;
+    display: none;
   }
 }
 </style>
