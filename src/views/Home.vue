@@ -1,7 +1,8 @@
 <!-- ICON FILL COLOR #42657d-->
+<!-- 138.197.219.90 -->
 
 <template>
-  <div id="content">
+  <div class="content">
     <div id="introduction">
       <!-- Introduction -->
       <div class='smallSection'>
@@ -91,6 +92,33 @@
           </div>
         </div>
       </div>
+      <!-- <div class='largeSection'>
+        <div class='projectCard'>
+          <img src='../assets/projects/relations.jpg' style='width: 150%; height: 100%; margin-left: -25%; position: relative; z-index: 1;'>
+          <div class='cardContent'>
+            <h4>BYU Homecoming</h4>
+            <h5>JS / Brightspot(CMS)</h5>
+            <p class='projectCardSummary'>Website to showcase information about university events, and find current and past university awardees.</p>
+            <br/><br/>
+            <a class='projectButton' href='https://homecoming.byu.edu/' target='_black'>View</a>
+          </div>
+        </div>
+        <div class='projectCard'>
+          <img src='../assets/projects/todo.jpg' style='width: 150%; height: 100%; margin-left: -25%; position: relative; z-index: 1;'>
+          <div class='cardContent'>
+            <h4>Aspengrove Resort</h4>
+            <h5>C.Fusion/Drupal/JS/SQL</h5>
+            <p class='projectCardSummary'>Web application to showcase information about the resort and allow users to make reservations, payments, and review their orders.</p>
+            <br/>
+            <a class='projectButton' href='http://aspengrove.byu.edu' target='_black'>View</a>
+          </div>
+        </div>
+        <div class='' style="background-color: #abd6f4; padding: 10px; margin: 10px; border: 1px solid black;">
+           <div class='cardContent'>
+            <h4 style="margin-top: 30%;">More Soon...</h4>
+          </div>
+        </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -132,6 +160,7 @@ export default {};
   margin: auto;
   width: 33%;
   display: flex;
+  overflow: hidden;
 }
 
 .smallSection div {
@@ -175,13 +204,6 @@ export default {};
 
 #about ul li img {
   border-radius: 50%;
-}
-
-#content {
-  position: relative;
-  width: 60%;
-  margin: 50px auto auto auto;
-  text-align: center;
 }
 
 #education h5 {
@@ -290,7 +312,7 @@ export default {};
 }
 
 @media only screen and (max-width: 1000px) {
-  #content {  
+  .content {  
     width: 100%;
     margin: 20px auto auto auto;
     text-align: center;
@@ -310,10 +332,6 @@ export default {};
 
   #introduction {
     display: inline-block;
-  }
-
-  #projects h6, h2{
-    color: black;
   }
 
   #projects .largeSection {

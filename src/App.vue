@@ -2,6 +2,7 @@
   <div id="app">
       <div id="bacK"></div>
       <div id="bacKTwo"></div>
+      <div id="bacKThree"></div>
       <router-view></router-view>
   </div>
 </template>
@@ -20,29 +21,54 @@ export default {
   --dark-blue: #4e6db5;
 }
 
+#app {
+  position: relative;
+}
+
 #bacK {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   background-color: var(--dark-blue);
-  transform: skewY(7deg);
+  /* transform: skewY(7deg); */
   z-index: -3;
   position: absolute;
-  top: 45%;
+  top: 30%;
   left: 0px;
   transition: .5s ease-in;
 }
 
 #bacKTwo {
-  width: 100vw;
-  height: 100vh;
+  width: 50vw;
+  height: 50%;
+  background-color: var(--light-blue);  
+  transform: skewY(7deg);
+  z-index: -2;
+  position: absolute;
+  top: -10%;
+  left: 0px;
+  transition: .5s ease-in;
+}
+
+#bacKThree {
+  float: right;
+  width: 50vw;
+  height: 50%;
   background-color: var(--light-blue);  
   transform: skewY(-7deg);
   z-index: -2;
   position: absolute;
-  top: -55%;
-  left: 0px;
+  top: -10%;
+  right: 0px;
   transition: .5s ease-in;
 }
+
+.content {
+  position: relative;
+  width: 60%;
+  margin: 50px auto auto auto;
+  text-align: center;
+}
+
 
 #sideBar {
   position: fixed;
@@ -129,13 +155,16 @@ a:hover {
 
   #bacK {
     width: 100vw;
-    height: 600px;
-    background-color: rgba(171, 214, 244, 1);
-    transform: skewY(-7deg);
+    height: 240vh;
+    background-color: var(--dark-blue);
     z-index: -2;
     position: absolute;
-    top: 5%;
+    top: 30%;
     left: 0px;
+  }
+
+  #projects {
+    background-color: var(--dark-blue);
   }
 
 }

@@ -1,0 +1,15 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle stroke="null" id="svg_2" r="32" fill="#4e6db5" cy="32" cx="32"/>
+  <path id="svg_10" d="m20.67581,51.765962" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#231F20"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_17" y2="63.455449" x2="32" y1="0.441809" x1="32" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+  <line stroke="null" stroke-linecap="null" stroke-linejoin="null" id="svg_18" y2="63.823121" x2="32" y1="0.624458" x1="32" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="none"/>
+  <text font-style="normal" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Shadows Into Light', serif" font-size="45" id="svg_20" y="48.112999" x="9.625591" stroke-opacity="null" stroke-width="0" stroke="null" fill="#ffffff">EC</text>
+ </g>
+</svg>
