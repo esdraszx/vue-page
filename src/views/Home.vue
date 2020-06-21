@@ -56,8 +56,8 @@
     <br/>
     <div id="projects">
       <!-- Showcase projects I have worked on -->
-      <h3><b>PROJECTS</b></h3>
-      <p>Most projects are restricted to BYU students or people with a BYU account.</p>
+      <h2><b>PROJECTS</b></h2>
+      <h6>Most projects are restricted to BYU students or people with a BYU account.</h6>
       <br/>
       <div class='largeSection'>
         <div class='projectCard'>
@@ -179,7 +179,9 @@ export default {};
 
 #content {
   position: relative;
-  top: -40px;
+  width: 60%;
+  margin: 50px auto auto auto;
+  text-align: center;
 }
 
 #education h5 {
@@ -200,11 +202,13 @@ export default {};
 }
 
 #skills p span{
+  color: black;
   margin: 2px;
   padding: 8px;
   font-weight: bold;
   border-radius: 15px;
-  background-color: var(--light-blue);
+  background-color: white;
+  border: 2px solid var(--dark-blue);
 }
 
 /*  PROJECTS */
@@ -212,6 +216,10 @@ export default {};
 #projects {
   height: 300px;
   margin-top: 30px;
+}
+
+#projects h6, h2{
+  color: white;
 }
 
 #projects .largeSection {
@@ -282,9 +290,11 @@ export default {};
 }
 
 @media only screen and (max-width: 1000px) {
-  #content {
-    top: -80px;
-    height: 2010px;
+  #content {  
+    width: 100%;
+    margin: 20px auto auto auto;
+    text-align: center;
+    height: 2120px;
   }
 
   #about, #skills, #education {
@@ -300,6 +310,10 @@ export default {};
 
   #introduction {
     display: inline-block;
+  }
+
+  #projects h6, h2{
+    color: black;
   }
 
   #projects .largeSection {

@@ -1,10 +1,8 @@
 <template>
   <div id="app">
-    <div class="container">
       <div id="bacK"></div>
       <div id="bacKTwo"></div>
       <router-view></router-view>
-    </div>
   </div>
 </template>
 
@@ -19,31 +17,31 @@ export default {
 <style>
 :root {
   --light-blue: #abd6f4;
-  --dark-blue: #42657d;
+  --dark-blue: #4e6db5;
 }
 
 #bacK {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(171, 214, 244, 1);
+  background-color: var(--dark-blue);
   transform: skewY(7deg);
-  z-index: -2;
+  z-index: -3;
   position: absolute;
   top: 45%;
   left: 0px;
-  transition: 1s ease-in;
+  transition: .5s ease-in;
 }
 
 #bacKTwo {
   width: 100vw;
   height: 100vh;
-  background-color: var(--dark-blue);
+  background-color: var(--light-blue);  
   transform: skewY(-7deg);
   z-index: -2;
   position: absolute;
   top: -55%;
   left: 0px;
-  transition: 1s ease-in;
+  transition: .5s ease-in;
 }
 
 #sideBar {
