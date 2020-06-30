@@ -155,12 +155,37 @@ a:hover {
 
   #bacK {
     width: 100vw;
-    height: 240vh;
+    height: 300vh;
     background-color: var(--dark-blue);
     z-index: -2;
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 0px;
+  }
+
+  #bacKTwo {
+    width: 50vw;
+    height: 100%;
+    background-color: var(--light-blue);  
+    transform: skewY(7deg);
+    z-index: -2;
+    position: absolute;
+    top: -10%;
+    left: 0px;
+    transition: .5s ease-in;
+  }
+
+  #bacKThree {
+    float: right;
+    width: 50vw;
+    height: 100%;
+    background-color: var(--light-blue);  
+    transform: skewY(-7deg);
+    z-index: -2;
+    position: absolute;
+    top: -10%;
+    right: 0px;
+    transition: .5s ease-in;
   }
 
   #projects {

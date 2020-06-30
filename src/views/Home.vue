@@ -66,8 +66,8 @@
           <div class='cardContent'>
             <h4>BYU Homecoming</h4>
             <h5>JS / Brightspot(CMS)</h5>
-            <p class='projectCardSummary'>Website to showcase information about university events, and find current and past university awardees.</p>
-            <br/><br/>
+            <!-- <p class='projectCardSummary'>Website to showcase information about university events, and find current and past university awardees.</p> -->
+            
             <a class='projectButton' href='https://homecoming.byu.edu/' target='_black'>View</a>
           </div>
         </div>
@@ -76,8 +76,8 @@
           <div class='cardContent'>
             <h4>Aspengrove Resort</h4>
             <h5>C.Fusion/Drupal/JS/SQL</h5>
-            <p class='projectCardSummary'>Web application to showcase information about the resort and allow users to make reservations, payments, and review their orders.</p>
-            <br/>
+            <!-- <p class='projectCardSummary'>Web application to showcase information about the resort and allow users to make reservations, payments, and review their orders.</p> -->
+            
             <a class='projectButton' href='http://aspengrove.byu.edu' target='_black'>View</a>
           </div>
         </div>
@@ -86,8 +86,8 @@
           <div class='cardContent'>
             <h4>YVideo</h4>
             <h5>React / Redux</h5>
-            <p class='projectCardSummary'>Video platform for professors to edit videos and create video collections. Students enrolled in a class can view the collections as part of their course work</p>
-            <br/>
+            <!-- <p class='projectCardSummary'>Video platform for professors to edit videos and create video collections. Students enrolled in a class can view the collections as part of their course work</p> -->
+            
             <a class='projectButton' href='https://github.com/BYU-ODH/yvideo-client' target='_black'>View</a>
           </div>
         </div>
@@ -236,7 +236,7 @@ export default {};
 /*  PROJECTS */
 
 #projects {
-  height: 300px;
+  height: 30vh;
   margin-top: 30px;
 }
 
@@ -271,11 +271,11 @@ export default {};
 }
 
 #projects .largeSection .projectCard:hover img {
-  top: -350px !important;
+  top: -30vh !important;
 }
 
 #projects .largeSection .projectCard:hover .cardContent {
-  top: -300px !important;
+  top: -30vh !important;
 }
 
 #projects .largeSection .projectCard .cardContent{
@@ -365,6 +365,12 @@ export default {};
 
   .projectCardSummary {
     display: none;
+  }
+}
+
+@media only screen and (min-height: 950px){
+  #projects h6, h2{
+    color: black;
   }
 }
 </style>
