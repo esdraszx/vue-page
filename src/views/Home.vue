@@ -50,7 +50,7 @@
             <span>Git</span> &nbsp;
             <span>Linux</span>
           </p>
-          <a href='./res2020.pdf' target='_blank' class='moreLink'><span>View Resume</span><img src='../assets/navigationIcons/arrowRight.svg' width='20px' height='20px'></a>
+          <a href='./rec2020.pdf' target='_blank' class='moreLink'><span>View Resume</span><img src='../assets/navigationIcons/arrowRight.svg' width='20px' height='20px'></a>
         </div>
       </div>
     </div>
