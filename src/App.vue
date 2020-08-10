@@ -23,18 +23,17 @@ export default {
 
 #app {
   position: relative;
+  overflow: hidden;
 }
 
 #bacK {
   width: 100vw;
   height: 70vh;
   background-color: var(--dark-blue);
-  /* transform: skewY(7deg); */
   z-index: -3;
   position: absolute;
   top: 30%;
   left: 0px;
-  transition: .5s ease-in;
 }
 
 #bacKTwo {
@@ -46,7 +45,6 @@ export default {
   position: absolute;
   top: -10%;
   left: 0px;
-  transition: .5s ease-in;
 }
 
 #bacKThree {
@@ -59,7 +57,6 @@ export default {
   position: absolute;
   top: -10%;
   right: 0px;
-  transition: .5s ease-in;
 }
 
 .content {
@@ -192,6 +189,23 @@ a:hover {
     background-color: var(--dark-blue);
   }
 
+}
+
+@keyframes moveLeft {
+    0%   {left:0px; top:0px;}
+    100% {left:200px; top:0px;}
+}
+
+@keyframes changeColor {
+    0% {background-color: rgb(202, 140, 140)}
+    50% {background-color: red;}
+    100% {background-color: rgb(179, 127, 127);}
+}
+
+@keyframes changeColorBlue {
+    0% {background-color: blueviolet}
+    50% {background-color: blue;}
+    100% {background-color: blueviolet;}
 }
 
 /*PROJECT CSS*/

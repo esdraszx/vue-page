@@ -3,6 +3,7 @@
 
 <template>
   <div class="content">
+    <Header></Header>
     <div id="introduction">
       <!-- Introduction -->
       <div class='smallSection'>
@@ -62,13 +63,13 @@
       <br/>
       <div class='largeSection'>
         <div class='projectCard'>
-          <img src='../assets/projects/homecoming.jpeg' style='width: 150%; height: 100%; margin-left: -25%; position: relative; z-index: 1;'>
+          <img src='../assets/projects/algo.png' style='width: 150%; height: 100%; margin-left: -25%; position: relative; z-index: 1;'>
           <div class='cardContent'>
-            <h4>BYU Homecoming</h4>
-            <h5>JS / Brightspot(CMS)</h5>
+            <h4>Algorithm Visualization</h4>
+            <h5>JavaScript</h5>
             <!-- <p class='projectCardSummary'>Website to showcase information about university events, and find current and past university awardees.</p> -->
             
-            <a class='projectButton' href='https://homecoming.byu.edu/' target='_black'>View</a>
+            <a class='projectButton' href='/algorithm' target=''>View</a>
           </div>
         </div>
         <div class='projectCard'>
@@ -78,7 +79,7 @@
             <h5>C.Fusion/Drupal/JS/SQL</h5>
             <!-- <p class='projectCardSummary'>Web application to showcase information about the resort and allow users to make reservations, payments, and review their orders.</p> -->
             
-            <a class='projectButton' href='http://aspengrove.byu.edu' target='_black'>View</a>
+            <a class='projectButton' href='http://aspengrove.byu.edu' target='_blank'>View</a>
           </div>
         </div>
         <div class='projectCard'>
@@ -88,7 +89,7 @@
             <h5>React / Redux</h5>
             <!-- <p class='projectCardSummary'>Video platform for professors to edit videos and create video collections. Students enrolled in a class can view the collections as part of their course work</p> -->
             
-            <a class='projectButton' href='https://github.com/BYU-ODH/yvideo-client' target='_black'>View</a>
+            <a class='projectButton' href='https://github.com/BYU-ODH/yvideo-client' target='_blank'>View</a>
           </div>
         </div>
       </div>
@@ -124,7 +125,19 @@
 </template>
 
 <script>
-export default {};
+import Header from '../components/Header'
+
+export default {
+  name: 'Home',
+  data(){
+    return {
+
+    }
+  },
+  components: {
+    Header: Header,
+  }
+};
 </script>
 
 <style scoped>
@@ -134,12 +147,14 @@ export default {};
 
 .smallSection .moreLink {
   display: flex; 
-  position: relative; 
+  position: absolute; 
   float: right; 
   text-decoration: none;
   font-size: 14px;
   padding: 0px 0px 0px 5px;
   transition: .5s ease-out;
+  bottom: 0px;
+  right: 0px;
 }
 
 .smallSection .moreLink span {
@@ -219,14 +234,18 @@ export default {};
   display: flex;
 }
 
+#skills {
+  position: relative;
+}
+
 #skills p {
-  line-height: 50px;
+  line-height: 2.5rem;
 }
 
 #skills p span{
   color: black;
   margin: 2px;
-  padding: 8px;
+  padding: .5rem;
   font-weight: bold;
   border-radius: 15px;
   background-color: white;
@@ -368,9 +387,4 @@ export default {};
   }
 }
 
-@media only screen and (min-height: 950px){
-  #projects h6, h2{
-    color: black;
-  }
-}
 </style>

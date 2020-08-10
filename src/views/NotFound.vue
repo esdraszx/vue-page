@@ -1,16 +1,17 @@
 <template>
     <div class="content">
+        <Header></Header>
 		<h1>WOW! Page not found: 404!</h1>
         <img src="../assets/dog.gif"/>
     </div>
 </template>
 
 <script>
-//import Header from '../components/Header'
+import Header from '../components/Header'
 
 export default {
     components: {
-       // 'Header': Header,
+       'Header': Header,
     },
 }
 </script>

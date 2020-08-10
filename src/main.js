@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-//import Projects from './views/Projects.vue'
+
+import Algorithm from './views/Algorithm.vue'
 import Home from './views/Home.vue'
 import NotFound from './views/NotFound.vue'
 // import Contact from './views/Contact.vue'
@@ -12,7 +13,7 @@ Vue.use(VueRouter);
 
 const route = [
   { path:'/', name:'Home', component: Home },
-  // { path:'/project', name:'Projects', component: Projects },
+  { path:'/algorithm', name:'Algorithm', component: Algorithm },
   // { path:'/about', name:'About', component: About },
   // { path:'/contact', name:'Contact', component: Contact }
   { path:'*', name: '404', component: NotFound}
