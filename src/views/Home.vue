@@ -332,7 +332,7 @@ export default {
 
 @media only screen and (max-width: 1000px) {
   .content {  
-    width: 100%;
+    width: 50%;
     margin: 20px auto auto auto;
     text-align: center;
     height: 2120px;
@@ -384,6 +384,12 @@ export default {
 
   .projectCardSummary {
     display: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .content {  
+      width: 100%;
+    }
   }
 }
 

@@ -18,6 +18,7 @@ export default {
 <style>
 :root {
   --light-blue: #abd6f4;
+  --blue: #7da2d5;
   --dark-blue: #4e6db5;
 }
 
@@ -28,11 +29,11 @@ export default {
 
 #bacK {
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   background-color: var(--dark-blue);
   z-index: -3;
   position: absolute;
-  top: 30%;
+  top: 0%;
   left: 0px;
 }
 
@@ -43,7 +44,7 @@ export default {
   transform: skewY(7deg);
   z-index: -2;
   position: absolute;
-  top: -10%;
+  top: -20%;
   left: 0px;
 }
 
@@ -55,7 +56,7 @@ export default {
   transform: skewY(-7deg);
   z-index: -2;
   position: absolute;
-  top: -10%;
+  top: -20%;
   right: 0px;
 }
 
@@ -65,7 +66,6 @@ export default {
   margin: 50px auto auto auto;
   text-align: center;
 }
-
 
 #sideBar {
   position: fixed;
@@ -132,7 +132,7 @@ a:hover {
 }
 
 /*MOBILLLLEEE*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 
   #app {
     height: 100vh;
@@ -152,7 +152,7 @@ a:hover {
 
   #bacK {
     width: 100vw;
-    height: 300vh;
+    height: 180vh;
     background-color: var(--dark-blue);
     z-index: -2;
     position: absolute;
@@ -169,7 +169,7 @@ a:hover {
     position: absolute;
     top: -10%;
     left: 0px;
-    transition: .5s ease-in;
+    /* transition: .5s ease-in; */
   }
 
   #bacKThree {
@@ -182,7 +182,7 @@ a:hover {
     position: absolute;
     top: -10%;
     right: 0px;
-    transition: .5s ease-in;
+    /* transition: .5s ease-in; */
   }
 
   #projects {
@@ -203,9 +203,15 @@ a:hover {
 }
 
 @keyframes changeColorBlue {
-    0% {background-color: blueviolet}
-    50% {background-color: blue;}
-    100% {background-color: blueviolet;}
+    0% {background-color: aqua}
+    50% {background-color: rgb(0, 175, 175);}
+    100% {background-color: aqua;}
+}
+
+@keyframes appearIntoScreen {
+    0% {background-color: var(--light-blue); opacity: 0;}
+    /* 50% {background-color: rgb(0, 175, 175);} */
+    100% {background-color: var(--dark-blue); opacity: 1;}
 }
 
 /*PROJECT CSS*/

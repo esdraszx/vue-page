@@ -10,8 +10,8 @@
   <circle opacity="0.2" id="svg_8" r="5" fill="#231F20" cy="34" cx="32"/>
   <circle opacity="0.2" id="svg_10" r="5" fill="#231F20" cy="19.594858" cx="32"/>
   <circle opacity="0.2" id="svg_12" r="5" fill="#231F20" cy="48.405142" cx="32"/>
-  <circle id="svg_14" r="5" fill="#4e6db5" cy="32" cx="32"/>
-  <circle id="svg_16" r="5" fill="#4e6db5" cy="17.594858" cx="32"/>
-  <circle id="svg_18" r="5" fill="#4e6db5" cy="46.405142" cx="32"/>
+  <circle id="svg_14" r="6" fill="#4e6db5" cy="32" cx="32"/>
+  <circle id="svg_16" r="6" fill="#4e6db5" cy="17.594858" cx="32"/>
+  <circle id="svg_18" r="6" fill="#4e6db5" cy="46.405142" cx="32"/>
  </g>
 </svg>

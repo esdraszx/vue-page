@@ -1,26 +1,39 @@
 <template>
     <div class="content">
         <Header></Header>
-        <h2>Algorithm Visualization</h2>
-        <br/>
+        <!-- <h2>Algorithm Visualization</h2>
+        <br/> -->
 
         <div class="options">
             <span @click="handleToggleOption(true)" v-bind:class="{active: toggleOption}">Sorting Algorithms</span>&nbsp;
-            <!-- <span @click="handleToggleOption(false)" v-bind:class="{active: !toggleOption}">Pathfind Algorithms</span> -->
+            <span @click="handleToggleOption(false)" v-bind:class="{active: !toggleOption}">Pathfind Algorithms</span>
         </div>
 
-        <!-- <div v-if="toggleOption !== false" class="algoList"> -->
-        <div class="algoList">    
-            <button @click="handleShowComponent('MergeSort')">Merge Sort</button>
-            <!-- <button >Quick Sort</button> -->
-            <!-- <button >Bubble Sort</button> -->
-        </div>
-        <!-- <div v-else class="algoList">
-            <p>Pathfinding soon</p>
-        </div> -->
+        <div v-if="toggleOption !== false">
+            <div class="algoList">    
+                <button v-bind:class="{ activeAlgo: componentName === 'MergeSort'}" @click="handleShowComponent('MergeSort')">Merge Sort</button>
+                <button v-bind:class="{ activeAlgo: componentName === 'QuickSort'}">Quick Sort</button>
+                <button v-bind:class="{ activeAlgo: componentName === 'BubbleSort'}">Bubble Sort</button>
+            </div>
 
-        <div v-if="componentName !== ''" class="algoComponent" >
-            <component v-bind:is="componentName"></component>
+            <div v-if="componentName !== ''" class="algoComponent">
+                <component v-bind:is="componentName"></component>
+            </div>
+            <div v-else>
+                <br/>
+                <h3>Sorting Algorithms</h3>
+                <p> Sorting algorithms explanation and a brief description of how I got the idea.</p>
+            </div>
+        </div>
+        <div v-else>
+            <div class="algoList">
+                <h3>Pathfinding coming soon</h3>
+            </div>
+            <br/>
+            <p>
+                The project is to show how a path finding algorithm works by using a series of animations based on the data collected from the algorithm.
+                The objective is to show how the shortest path to a point is found and how the algorithm picks the short option and keeps track of the options that weren't the best
+            </p>
         </div>
 
         
@@ -53,7 +66,7 @@ export default {
     name: 'Algorithm',
     data (){
         return {
-            toggleOption: false,
+            toggleOption: true,
             message: 'hi there',
             componentName: '',
         }
@@ -89,10 +102,14 @@ input:focus, button:focus {
 }
 
 .options span {
-    padding: 2px;
+    padding: 2px 10px 2px 10px;
     margin: 10px;
-    border-bottom: 1px solid black;
+    border: 2px solid transparent;
     cursor: pointer;
+}
+
+.options span:hover {
+    border: 2px solid var(--dark-blue);
 }
 
 .algoList {
@@ -103,10 +120,9 @@ input:focus, button:focus {
     display: flex;
     height: 50px;
     transition: .5s ease;
-
 }
 
-.algoList p {
+.algoList h3, p {
     margin: auto;
 }
 
@@ -127,9 +143,13 @@ input:focus, button:focus {
     
 }
 
+.activeAlgo {
+    color: white;
+    background-color: var(--dark-blue) !important;
+}
+
 .algoComponent {
     margin: 25px auto auto 0%;
-    border: 1px solid yellow;
     background-color: white;
     width: 100%;
     height: 600px;
@@ -160,7 +180,7 @@ input:focus, button:focus {
 }
 
 .active {
-    border-bottom: 2px solid black !important;
+    border-bottom: 2px solid var(--dark-blue) !important;
 }
 
 </style>
