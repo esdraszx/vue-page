@@ -3,11 +3,12 @@
         <div>
 					<!-- <input type='number' placeholder='# elements' id='number-elements'/> -->
 					<div class="header" style="display: flex;">
-						<h3>Unsorted Array 0 - 299: </h3><span><button id='create-elements' @click="createArray()">Mix Array</button></span>
+						<h3>Unsorted Array 0 - 299: </h3>
 					</div>
 					<ul ref='problem' id="problem">
 						<li v-for="pro in problem" :key="pro" :id="pro" :style="{height: `${pro}px`,}"></li>
 					</ul>
+					<button id='create-elements' @click="createArray()">Mix Array</button>&nbsp;
 					<button ref='merge-sort' @click="triggerSort()">Merge Sort</button>
 					<br/>
 					
@@ -76,9 +77,14 @@ export default {
 			this.arrayone.clear()
 			this.time = ''
 			let counter = 0;
+			let columns = 300;
+			if(window.innerWidth < 1000){
+				this.arrayElements = 100
+				columns = 100
+			}
 			while(counter < this.arrayElements){
 
-				let ranNumber = parseInt(Math.random()*(300 - 0) + 0)
+				let ranNumber = parseInt(Math.random()*(columns - 0) + 0)
 				this.arrayone.add(ranNumber)
 				counter = this.arrayone.size
 				//window.console.log(counter)
@@ -262,5 +268,11 @@ export default {
 
 	button:hover {
 		border: 2.5px solid var(--light-blue);
+	}
+
+	@media only screen and (max-width: 600px){
+		ul {
+			height: 100px;
+		}
 	}
 </style>

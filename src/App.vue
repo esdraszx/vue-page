@@ -144,6 +144,10 @@ a:hover {
     display: none;
   }
 
+  .content {
+    width: 100%;
+  }
+
   #footer {
     width: 100%;
     position: relative;

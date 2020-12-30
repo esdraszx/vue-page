@@ -22,7 +22,7 @@
             <div v-else>
                 <br/>
                 <h3>Sorting Algorithms</h3>
-                <p> Sorting algorithms explanation and a brief description of how I got the idea.</p>
+                <p> Sorting algorithms</p>
             </div>
         </div>
         <div v-else>
@@ -181,6 +181,16 @@ input:focus, button:focus {
 
 .active {
     border-bottom: 2px solid var(--dark-blue) !important;
+}
+
+@media only screen and (max-width: 600px){
+    .algoComponent {
+        width: 100%;
+    }
+
+    .algoList button {
+        height: 50px;
+    }
 }
 
 </style>

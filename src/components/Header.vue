@@ -127,22 +127,28 @@ export default {
 
   @media only screen and (max-width: 600px){
     #menuContainer {
+      top: -55px;
       right: -5%;
     }
 
     #menu {
+      position: fixed;
+      top: 0px;
+      left: 0px;
       text-align: center;
-      left: -290px;
-      background-color: var(--light-blue);
-      height: 50px;
-      width: 310px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      border-radius: 10px;
-      padding: 2px;
+      background-color: var(--dark-blue);
+      height: 100vh;
+      width: 100vw;
+      border-radius: 0px;
+      padding: 0px;
+      margin: 50px 0px 0px 0px;
       border: 2px solid var(--dark-blue);
+      z-index: 20;
+    }
+
+    .menu-item {
+      width: 99%;
+      height: 50px;
     }
 
     .menuItem {
@@ -153,19 +159,27 @@ export default {
     }
 
     #media {
-      display: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--dark-blue);
+    }
+
+    #media a {
+      border: 1px solid white;
+      border-radius: 50%;
     }
 
     @keyframes enterScreen {
-      0% {left:150px; opacity: 0; transform: skewY(10deg);}
+      0% {left:0px; opacity: 0; transform: skewY(0deg);}
       /* 50% {background-color: rgb(0, 175, 175);} */
-      100% {left: -290px; opacity: 1; transform: skewY(0deg);}  
+      100% {left: -0px; opacity: 1; transform: skewY(0deg);}  
     }
 
     @keyframes leaveScreen {
-      0% {left:-290px; opacity: 1;}
+      0% {left: 0px; opacity: 1;}
       /* 50% {background-color: rgb(0, 175, 175);} */
-      100% {left: 150px; opacity: 0;}  
+      100% {left: 0px; opacity: 0;}  
     }
   }
   
