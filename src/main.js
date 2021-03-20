@@ -16,7 +16,7 @@ const route = [
   { path:'/algorithm', name:'Algorithm', component: Algorithm },
   // { path:'/about', name:'About', component: About },
   // { path:'/contact', name:'Contact', component: Contact }
-  { path:'*', name: '404', component: NotFound}
+//   { path:'*', name: '404', component: NotFound}
 ];
 
 const router = new VueRouter ({ routes: route, mode: 'history' });
