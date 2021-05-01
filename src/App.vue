@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-      <div id="bacK"></div>
+      <!-- <div id="bacK"></div>
       <div id="bacKTwo"></div>
-      <div id="bacKThree"></div>
+      <div id="bacKThree"></div> -->
       <router-view></router-view>
   </div>
 </template>
@@ -144,8 +144,9 @@ a:hover {
     display: none;
   }
 
-  .content {
+  .content {  
     width: 100%;
+    margin: 20px auto auto auto;
   }
 
   #footer {

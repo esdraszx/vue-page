@@ -1,6 +1,6 @@
 <template>
   <div id="menuContainer">
-    <img src="../assets/icons/3pointsIcon.svg" @click="handleShowMenu()"/>
+    <img id="menu-icon" src="../assets/icons/3pointsIcon.svg" @click="handleShowMenu()"/>
     <transition name="fade" enter-active-class="activeEnter" leave-active-class="activeLeave">
       <ul v-if="showMenu !== false" id="menu" >
         <!-- <li class="menu-item">
@@ -14,6 +14,9 @@
         </li>
         <li class="menu-item">
           <a href="./rec2020.pdf" class="menuItem" target="_blank">RESUME</a>
+        </li>
+        <li class="menu-item">
+          <button @click="handleShowMenu()" class="menuItem">CLOSE</button>
         </li>
         <li class="menu-item" id="media">
           <a href="https://www.linkedin.com/in/e-catala/" target="_blank">
@@ -55,6 +58,10 @@ export default {
     right: -5%;
   }
 
+  #menu-icon {
+    margin-right: 10px;
+  }
+
   #menu {
     position: absolute;
     text-align: right;
@@ -71,22 +78,37 @@ export default {
     margin: 2px;
     width: 100%;
     height: 40px;
-    background-color: var(--dark-blue);
+    background-color: var(--blue);
     display: flex;
     position: relative;
     border-radius: 5px;
+    transition: ease .5s;
     /* animation-duration: .7s; */
     /* animation-name: appearIntoScreen; */
+  }
+
+  .menu-item:hover {
+    background-color: var(--light-blue);
   }
 
   .menuItem {
     width: 100%;
     margin: auto 5px auto auto;
-    color: white;
+    color: black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: right;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   #media {
-    background-color: var(--light-blue);
+    background-color: var(--blue);
   }
 
   #media a {
@@ -127,7 +149,7 @@ export default {
 
   @media only screen and (max-width: 600px){
     #menuContainer {
-      top: -55px;
+      top: -0px;
       right: -5%;
     }
 
@@ -141,7 +163,6 @@ export default {
       width: 100vw;
       border-radius: 0px;
       padding: 0px;
-      margin: 50px 0px 0px 0px;
       border: 2px solid var(--dark-blue);
       z-index: 20;
     }
@@ -154,8 +175,11 @@ export default {
     .menuItem {
       width: 100%;
       margin: auto auto auto auto;
-      color: white;
+      /* color: white; */
+      /* border-bottom: 1px solid rgba(255, 255, 255, 0.4); */
+      /* font-weight: 500; */
       font-size: 15px;
+      text-align: center;
     }
 
     #media {

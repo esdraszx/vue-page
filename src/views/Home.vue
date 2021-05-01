@@ -51,7 +51,7 @@
             <span>Git</span> &nbsp;
             <span>Linux</span>
           </p>
-          <a href='./rec2020.pdf' target='_blank' class='moreLink'><span>View Resume</span><img src='../assets/navigationIcons/arrowRight.svg' width='20px' height='20px'></a>
+          <!-- <a href='./rec2020.pdf' target='_blank' class='moreLink'><span>View Resume</span><img src='../assets/navigationIcons/arrowRight.svg' width='20px' height='20px'></a> -->
         </div>
       </div>
     </div>
@@ -180,10 +180,9 @@ export default {
 
 .smallSection div {
   width: 90%;
-  height: 90%;
-  margin: auto;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -192,7 +191,20 @@ export default {
   width: 80%;
   min-height: 350px;
   height: 300px;
-  margin: auto;
+  margin: 10px auto 10px auto;
+  overflow: scroll;
+}
+
+#about::-webkit-scrollbar {
+  display: none;
+}
+
+#education::-webkit-scrollbar {
+  display: none;
+}
+
+#skills::-webkit-scrollbar {
+  display: none;
 }
 
 #about img, #education img, #skills img {
