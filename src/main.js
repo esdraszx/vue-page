@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 
 import Algorithm from './views/Algorithm.vue'
 import Home from './views/Home.vue'
-import NotFound from './views/NotFound.vue'
+// import NotFound from './views/NotFound.vue'
 // import Contact from './views/Contact.vue'
 //import About from './views/About.vue'
 
