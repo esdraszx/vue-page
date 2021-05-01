@@ -17,47 +17,16 @@ export default {
 
 <style>
 :root {
-  --light-blue: #abd6f4;
-  --blue: #7da2d5;
-  --dark-blue: #4e6db5;
+  --light: #caf0f8;
+  --medium: #90e0ef;
+  --dark: #0077b6;
+  --darker: #03045e;
+  /* https://coolors.co/03045e-0077b6-00b4d8-90e0ef-caf0f8 */
 }
 
 #app {
   position: relative;
   overflow: hidden;
-}
-
-#bacK {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--dark-blue);
-  z-index: -3;
-  position: absolute;
-  top: 0%;
-  left: 0px;
-}
-
-#bacKTwo {
-  width: 50vw;
-  height: 50%;
-  background-color: var(--light-blue);  
-  transform: skewY(7deg);
-  z-index: -2;
-  position: absolute;
-  top: -20%;
-  left: 0px;
-}
-
-#bacKThree {
-  float: right;
-  width: 50vw;
-  height: 50%;
-  background-color: var(--light-blue);  
-  transform: skewY(-7deg);
-  z-index: -2;
-  position: absolute;
-  top: -20%;
-  right: 0px;
 }
 
 .content {
@@ -154,46 +123,6 @@ a:hover {
     position: relative;
     bottom: 0px;
   }
-
-  #bacK {
-    width: 100vw;
-    height: 180vh;
-    background-color: var(--dark-blue);
-    z-index: -2;
-    position: absolute;
-    top: 50%;
-    left: 0px;
-  }
-
-  #bacKTwo {
-    width: 50vw;
-    height: 100%;
-    background-color: var(--light-blue);  
-    transform: skewY(7deg);
-    z-index: -2;
-    position: absolute;
-    top: -10%;
-    left: 0px;
-    /* transition: .5s ease-in; */
-  }
-
-  #bacKThree {
-    float: right;
-    width: 50vw;
-    height: 100%;
-    background-color: var(--light-blue);  
-    transform: skewY(-7deg);
-    z-index: -2;
-    position: absolute;
-    top: -10%;
-    right: 0px;
-    /* transition: .5s ease-in; */
-  }
-
-  #projects {
-    background-color: var(--dark-blue);
-  }
-
 }
 
 @keyframes moveLeft {

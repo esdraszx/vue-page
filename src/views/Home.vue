@@ -261,7 +261,7 @@ export default {
   font-weight: bold;
   border-radius: 15px;
   background-color: white;
-  border: 2px solid var(--dark-blue);
+  border: 2px solid var(--dark);
 }
 
 /*  PROJECTS */
@@ -272,7 +272,7 @@ export default {
 }
 
 #projects h6, h2{
-  color: white;
+  color: black;
 }
 
 #projects .largeSection {

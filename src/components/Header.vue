@@ -12,9 +12,9 @@
         <li class="menu-item">
           <router-link class="menuItem" to="/algorithm">ALGORITHMS</router-link>
         </li>
-        <li class="menu-item">
+        <!-- <li class="menu-item">
           <a href="./rec2020.pdf" class="menuItem" target="_blank">RESUME</a>
-        </li>
+        </li> -->
         <li class="menu-item">
           <button @click="handleShowMenu()" class="menuItem">CLOSE</button>
         </li>
@@ -78,7 +78,7 @@ export default {
     margin: 2px;
     width: 100%;
     height: 40px;
-    background-color: var(--blue);
+    background-color: var(--dark);
     display: flex;
     position: relative;
     border-radius: 5px;
@@ -88,13 +88,13 @@ export default {
   }
 
   .menu-item:hover {
-    background-color: var(--light-blue);
+    background-color: var(--medium);
   }
 
   .menuItem {
     width: 100%;
     margin: auto 5px auto auto;
-    color: black;
+    color: white;
     background-color: transparent;
     border: none;
     outline: none;
@@ -108,7 +108,7 @@ export default {
   }
 
   #media {
-    background-color: var(--blue);
+    background-color: var(--dark);
   }
 
   #media a {
@@ -158,12 +158,12 @@ export default {
       top: 0px;
       left: 0px;
       text-align: center;
-      background-color: var(--dark-blue);
+      background-color: var(--dark);
       height: 100vh;
       width: 100vw;
       border-radius: 0px;
       padding: 0px;
-      border: 2px solid var(--dark-blue);
+      border: 2px solid var(--dark);
       z-index: 20;
     }
 
@@ -186,7 +186,7 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: var(--dark-blue);
+      background-color: var(--dark);
     }
 
     #media a {
