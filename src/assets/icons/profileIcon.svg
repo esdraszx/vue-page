@@ -6,11 +6,11 @@
  </g>
  <g>
   <title>Layer 1</title>
-  <circle id="svg_2" r="32" fill="#4e6db5" cy="32" cx="32"/>
+  <circle id="svg_2" r="32" fill="#415a77" cy="32" cx="32"/>
   <ellipse stroke="null" ry="11.461176" rx="11.141541" id="svg_9" cy="20.487452" cx="32.091324" stroke-opacity="null" stroke-width="null" fill="#ffffff"/>
   <path id="svg_10" d="m20.67581,51.765962" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#231F20"/>
   <ellipse stroke="null" ry="13.607293" rx="20.913222" id="svg_15" cy="47.747701" cx="32.091324" stroke-opacity="null" stroke-width="null" fill="#ffffff"/>
-  <path id="svg_16" d="m7.616461,47.291081l48.547872,-0.076512l-2.191779,5.662095l-3.561641,3.378993l-4.748854,2.831047l-4.748854,1.643834l-4.474882,1.09589l-6.301364,0.182648l-7.579902,-1.369862l-5.570771,-2.191779l-2.648399,-1.735158l-2.009131,-1.55251l-2.557075,-2.374427l-2.15522,-5.494259z" stroke-opacity="null" stroke-width="null" stroke="null" fill="#4e6db5"/>
+  <path id="svg_16" d="m7.616461,47.291081l48.547872,-0.076512l-2.191779,5.662095l-3.561641,3.378993l-4.748854,2.831047l-4.748854,1.643834l-4.474882,1.09589l-6.301364,0.182648l-7.579902,-1.369862l-5.570771,-2.191779l-2.648399,-1.735158l-2.009131,-1.55251l-2.557075,-2.374427l-2.15522,-5.494259z" stroke-opacity="null" stroke-width="null" stroke="null" fill="#415a77"/>
   <line stroke-linecap="null" stroke-linejoin="null" id="svg_17" y2="63.455449" x2="32" y1="0.441809" x1="32" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
   <line stroke="null" stroke-linecap="null" stroke-linejoin="null" id="svg_18" y2="63.823121" x2="32" y1="0.624458" x1="32" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="none"/>
  </g>

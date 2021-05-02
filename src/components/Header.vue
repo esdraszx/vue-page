@@ -78,7 +78,7 @@ export default {
     margin: 2px;
     width: 100%;
     height: 40px;
-    background-color: var(--dark);
+    background-color: var(--medium);
     display: flex;
     position: relative;
     border-radius: 5px;
@@ -108,7 +108,7 @@ export default {
   }
 
   #media {
-    background-color: var(--dark);
+    background-color: var(--medium);
   }
 
   #media a {

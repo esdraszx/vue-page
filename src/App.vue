@@ -17,10 +17,10 @@ export default {
 
 <style>
 :root {
-  --light: #caf0f8;
-  --medium: #90e0ef;
-  --dark: #0077b6;
-  --darker: #03045e;
+  --light: #dee2e6;
+  --medium: #778da9;
+  --dark: #415a77;
+  --darker: #0d1b2a;
   /* https://coolors.co/03045e-0077b6-00b4d8-90e0ef-caf0f8 */
 }
 

@@ -1,22 +1,22 @@
 <template>
     <div>
         <div>
-					<!-- <input type='number' placeholder='# elements' id='number-elements'/> -->
-					<div class="header" style="display: flex;">
-						<h3>Unsorted Array 0 - 299: </h3>
-					</div>
-					<ul ref='problem' id="problem">
-						<li v-for="pro in problem" :key="pro" :id="pro" :style="{height: `${pro}px`,}"></li>
-					</ul>
-					<button id='create-elements' @click="createArray()">Mix Array</button>&nbsp;
-					<button ref='merge-sort' @click="triggerSort()">Merge Sort</button>
-					<br/>
-					
-					<h3 ref='time'>Solution Execution time: {{ time }}</h3>
-					<p>The animation time is independent from the algorithm time</p>
-					<div id="solution">
-						<span v-for="val in solution" :key="val"> {{val}} </span>
-					</div>
+			<!-- <input type='number' placeholder='# elements' id='number-elements'/> -->
+			<div class="header" style="display: flex;">
+				<h3>Unsorted Array 0 - 299: </h3>
+			</div>
+			<ul ref='problem' id="problem">
+				<li v-for="pro in problem" :key="pro" :id="pro" :style="{height: `${pro}px`,}"></li>
+			</ul>
+			<!-- <button id='create-elements' @click="createArray()">Mix Array</button>&nbsp; -->
+			<button ref='merge-sort' @click="triggerSort()">Merge Sort</button>
+			<br/>
+			
+			<h3 ref='time'>Solution Execution time: {{ time }}</h3>
+			<p>The animation time is independent from the algorithm time</p>
+			<div id="solution">
+				<span v-for="val in solution" :key="val"> {{val}} </span>
+			</div>
         </div>
     </div>
 </template>
@@ -35,8 +35,12 @@ export default {
 			arrayOfArrays: [],
 			arrayone: new Set(),
 			stopRun: false,
+			rand: '',
 		}
-  },
+	},
+	created(){
+		this.rand = Math.round(Math.random() * 1000)
+	},
 	mounted(){
 		this.createArray()
 	},
@@ -67,7 +71,7 @@ export default {
 			window.console.log('create array')
 			var highestTimeoutId = setTimeout(";");
 			for (var i = 0 ; i < highestTimeoutId ; i++) {
-					clearTimeout(i); 
+				clearTimeout(i); 
 			}
 			//CREATES ARRAY OF RANDOM NUMBERS FROM 0 to 500
 			this.arrayOfSplit = []
@@ -76,8 +80,9 @@ export default {
 			this.solution = []
 			this.arrayone.clear()
 			this.time = ''
-			let counter = 0;
-			let columns = 300;
+			let counter = 0
+			let columns = 300
+			this.arrayone.clear()
 			if(window.innerWidth < 1000){
 				this.arrayElements = 100
 				columns = 100
@@ -177,9 +182,9 @@ export default {
 					unsorted[i].forEach((col, j)=> {
 						setTimeout(() => {
 						document.getElementById(`${col}`).style.animationName = 'changeColor' 
-						}, j * 300);    
+						}, j * 100);    
 					});
-				}, i*30);
+				}, i*10);
 			}
 
 			//AFTER THE ANALYZE THE ARRAYS WE START TO MOVE THEM FROM ONE PLACE TO THE OTHER. SO WE NEED TO ANIMATE THE INDEX CHANGE OF VALUE "X"
@@ -207,9 +212,9 @@ export default {
 							}, j * 10);
 						
 						});
-					}, i * 50);
+					}, i * 30);
 				}
-			}, 500)
+			}, 200)
 		}
 	}
 }
@@ -254,12 +259,12 @@ export default {
 		transition: 2s ease;
 		position: relative;
 		animation-duration: 2s;
-		background-color: var(--blue);
+		background-color: blue;
 	}
 
 	button {
-		background-color: var(--blue);
-		border: 2.5px solid var(--blue);
+		background-color: var(--light);
+		border: 2.5px solid var(--light);
 		width: 120px;
 		cursor: pointer;
 		transition: .5s ease;
@@ -267,7 +272,7 @@ export default {
 	}
 
 	button:hover {
-		border: 2.5px solid var(--light-blue);
+		border: 2.5px solid var(--dark);
 	}
 
 	@media only screen and (max-width: 600px){

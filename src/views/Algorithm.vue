@@ -15,9 +15,9 @@
                 <button v-bind:class="{ activeAlgo: componentName === 'QuickSort'}">Quick Sort</button>
                 <button v-bind:class="{ activeAlgo: componentName === 'BubbleSort'}">Bubble Sort</button>
             </div>
-
             <div v-if="componentName !== ''" class="algoComponent">
-                <component v-bind:is="componentName"></component>
+                <button id="restartAlgo" @click="componentKey = !componentKey">Restart</button>
+                <component v-bind:is="componentName" :key="componentKey"></component>
             </div>
             <div v-else>
                 <br/>
@@ -69,6 +69,7 @@ export default {
             toggleOption: true,
             message: 'hi there',
             componentName: '',
+            componentKey: 0,
         }
     },
     methods: {
@@ -109,7 +110,7 @@ input:focus, button:focus {
 }
 
 .options span:hover {
-    border: 2px solid var(--dark-blue);
+    border: 2px solid var(--dark);
 }
 
 .algoList {
@@ -130,7 +131,7 @@ input:focus, button:focus {
     width: 140px;
     height: 40px;
     margin: auto;
-    border: 2px solid var(--dark-blue);
+    border: 2px solid var(--dark);
     background-color: transparent;
     transition: .5s ease;
     font-weight: bold;
@@ -138,14 +139,12 @@ input:focus, button:focus {
 }
 
 .algoList button:hover {
-    color: white;
-    background-color: var(--dark-blue);
-    
+    background-color: var(--light);    
 }
 
 .activeAlgo {
     color: white;
-    background-color: var(--dark-blue) !important;
+    background-color: var(--darker) !important;
 }
 
 .algoComponent {
@@ -159,6 +158,18 @@ input:focus, button:focus {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3), 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
+#restartAlgo {
+    background-color: var(--light);
+    border: 2.5px solid var(--light);
+    width: 120px;
+    cursor: pointer;
+    transition: .5s ease;
+    font-weight: 600;
+}
+
+#restartAlgo:hover {
+    border: 2.5px solid var(--dark);
+}
 /* width */
 .algoComponent::-webkit-scrollbar {
   width: 5px;
@@ -166,21 +177,21 @@ input:focus, button:focus {
 
 /* Track */
 .algoComponent::-webkit-scrollbar-track {
-  background: var(--dark-blue);
+  background: var(--light);
 }
 
 /* Handle */
 .algoComponent::-webkit-scrollbar-thumb {
-  background: var(--light-blue);
+  background: var(--dark);
 }
 
 /* Handle on hover */
-.algoComponent::-webkit-scrollbar-thumb:hover {
+/* .algoComponent::-webkit-scrollbar-thumb:hover {
   background: rgb(15, 216, 223);
-}
+} */
 
 .active {
-    border-bottom: 2px solid var(--dark-blue) !important;
+    border-bottom: 2px solid var(--dark) !important;
 }
 
 @media only screen and (max-width: 600px){
